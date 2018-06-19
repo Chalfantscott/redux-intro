@@ -31,10 +31,10 @@ let checkboxLabelHTML = document.getElementById('checkbox-label');
 
 store3.subscribe(() => {
 	let checkState = store3.getState();
-	if (!checkState.isChecked){
-		checkboxLabelHTML.innerHTML = 'unchecked';
-	}else{
+	if (checkState.isChecked){
 		checkboxLabelHTML.innerHTML = 'checked';
+	}else{
+		checkboxLabelHTML.innerHTML = 'unchecked';
 	}
 })
 

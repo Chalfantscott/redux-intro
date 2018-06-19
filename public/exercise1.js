@@ -12,7 +12,7 @@ let reducer1 = (state = 0, action) => {
 	if (action.type == "INCREMENT") {
 		return state + 1;
 	} else {
-	return state;
+		return state;
 	}
 }
 
